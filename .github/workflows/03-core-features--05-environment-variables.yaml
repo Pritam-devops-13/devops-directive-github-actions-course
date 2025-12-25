@@ -3,9 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - "example-branch/pritam"
-    paths:
-      - ".github/workflows/03-core-features--05-environment-variables.yaml"
+      - "example-branch/*"
 env:
   WORKFLOW_VAR: I_AM_WORKFLOW_SCOPED
 
