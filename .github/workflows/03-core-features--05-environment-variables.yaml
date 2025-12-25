@@ -22,7 +22,7 @@ jobs:
           echo "JOB_VAR:      $JOB_VAR"        # visible
           echo "STEP_VAR:     $STEP_VAR"       # visible only here
 
-      - name: Inspect scopes job 1 step 2
+      - name: Inspect scopes job 1 step 2 
         run: |
           echo "WORKFLOW_VAR: $WORKFLOW_VAR"         # visible
           echo "JOB_VAR:      $JOB_VAR"              # visible
