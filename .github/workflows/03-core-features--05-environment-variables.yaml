@@ -1,6 +1,9 @@
 name: Environment Variables
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - "example-branch/*"
 env:
   WORKFLOW_VAR: I_AM_WORKFLOW_SCOPED
 
