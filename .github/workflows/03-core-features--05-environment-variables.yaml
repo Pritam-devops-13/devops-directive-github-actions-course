@@ -6,11 +6,12 @@ env:
 
 jobs:
   job-1:
+    name: Job 1 - Inspect Env Scopes
     runs-on: ubuntu-24.04
     env:
       JOB_VAR: I_AM_JOB_1_SCOPED
     steps:
-      - name: Inspect scopes job 1 step 1
+      - name: Inspect scop  es job 1 step 1
         env:
           STEP_VAR: I_AM_STEP_SCOPED
         run: |
@@ -25,6 +26,7 @@ jobs:
           echo "STEP_VAR:     ${STEP_VAR:-<UNSET>}"  # not set here
 
   job-2:
+    name: Job 2 - Inspect Env Scopes
     runs-on: ubuntu-24.04
     steps:
       - name: Inspect scopes job 2 step 2
