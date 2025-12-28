@@ -1,6 +1,9 @@
 name: Passing Variables Between jobs
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - "example-branch/*"
 
 jobs:
   producer:
