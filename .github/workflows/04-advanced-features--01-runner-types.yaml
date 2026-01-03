@@ -2,6 +2,10 @@ name: Runner types
 on:
   workflow_dispatch:
 
+  push:
+    branches:
+    - "example-branch/**"
+
 jobs:
   ######################################
   #  GITHUB (MICROSOFT) HOSTED RUNNERS
