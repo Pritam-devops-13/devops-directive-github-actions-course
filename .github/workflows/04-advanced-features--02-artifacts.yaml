@@ -2,6 +2,10 @@ name: Artifacts
 on:
   workflow_dispatch:
 
+  push:
+    branches:
+    - "example-branch/**"
+
 jobs:
   artifact-producer:
     name: Produce artifact
