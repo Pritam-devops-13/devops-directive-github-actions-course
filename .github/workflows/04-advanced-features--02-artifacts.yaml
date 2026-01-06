@@ -32,5 +32,5 @@ jobs:
         with:
           name: example-artifact
 
-      - name: Cat artifact file
-        run: cat artifact.txt
+      # - name: Cat artifact file
+      #   run: cat artifact.txt
