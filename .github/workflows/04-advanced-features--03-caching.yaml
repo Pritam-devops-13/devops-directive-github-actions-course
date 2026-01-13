@@ -2,6 +2,10 @@ name: Caching
 on:
   workflow_dispatch:
 
+  push:
+    branches:
+    - "example-branch/**"
+
 jobs:
   # ──────────────────────────────────────────────
   # 2) Generic cache with actions/cache

@@ -2,10 +2,6 @@ name: Artifacts
 on:
   workflow_dispatch:
 
-  push:
-    branches:
-    - "example-branch/**"
-
 jobs:
   artifact-producer:
     name: Produce artifact
@@ -32,5 +28,5 @@ jobs:
         with:
           name: example-artifact
 
-      # - name: Cat artifact file
-      #   run: cat artifact.txt
+      - name: Cat artifact file
+        run: cat artifact.txt
